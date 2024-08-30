@@ -29,6 +29,9 @@ class Block{
         const lastHash  = lastBlock.hash;
         const hash      = Block.hash(timestamp,lastHash,ownData);
 
+        // dazwischen liegt der Miningaufwand .... Energie!!!! / Zeit vergeht ....
+        // Sicher(er) wie Fort Knox! --> Proof of Work
+
         return new this(timestamp,lastHash,hash,ownData);
 
     }
